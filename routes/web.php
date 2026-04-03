@@ -83,6 +83,6 @@ Route::group(['middleware' => 'guest'], function () {
 
 });
 
-Route::get('/login', function () {
-    return view('session/login-session');
+Route::get('/login', function (l) {
+    return view('pages.auth.login');
 })->name('login');
